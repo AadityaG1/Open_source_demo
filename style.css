@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    display: flex; /*flex property sets flexible length on flexible items*/ 
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;/*viewport height(vh) which is viewable screen's height and 100vh represents full screen*/ 
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+    /*https://images.unsplash.com/photo-1462400362591-9ca55235346a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1432&q=80*/
+    /* https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 */
+    /* https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80*/
+    background-size: cover;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 31px ;
+    text-align: end;
+    color: blueviolet;
+}
+
+.clock{ /* since it is a class it can be accessed by . */
+display: flex;
+}
+
+.clock div{/* any div child of a tag containing class clock */
+    margin: 5px;
+    font-size: 20px ;
+}
+ 
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: rgb(144, 139, 112);
+    opacity: 0.9;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: brown;
+}
+
+ .clock #ampm{
+    /* bottom: 0; */
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px; 
+    
+} 
